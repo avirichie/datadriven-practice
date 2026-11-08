@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/zesty_penguin_9829), commi
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Cheapest Cost Per Region](./practice/sql/cheapest-cost-per-region) | SQL | Easy | 2026-11-08 |
 | [Tiers of Want](./practice/sql/tiers-of-want) | SQL | Hard | 2026-10-21 |
 | [Mobile Event Counts](./practice/sql/mobile-event-counts) | SQL | Easy | 2026-10-20 |
 | [The Heaviest Hitters](./practice/sql/the-heaviest-hitters) | SQL | Easy | 2026-10-20 |
