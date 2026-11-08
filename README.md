@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/zesty_penguin_9829), commi
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Warm Edges](./practice/sql/the-warm-edges) | SQL | Medium | 2026-10-19 |
 | [Service Alert Frequency](./practice/sql/service-alert-frequency) | SQL | Easy | 2026-10-17 |
 
 <!-- datadriven:index:end -->
