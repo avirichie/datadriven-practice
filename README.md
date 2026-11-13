@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/zesty_penguin_9829), commi
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Deduplicate the Stream](./practice/sql/deduplicate-the-stream) | SQL | Hard | 2026-11-13 |
 | [Bargains and Budget-Busters](./practice/sql/bargains-and-budget-busters) | SQL | Hard | 2026-11-13 |
 | [Suspected Bot Sessions](./practice/sql/suspected-bot-sessions) | SQL | Easy | 2026-11-12 |
 | [Cheapest Cost Per Region](./practice/sql/cheapest-cost-per-region) | SQL | Easy | 2026-11-08 |
