@@ -11,36 +11,17 @@ WITH unioned_base AS (
     region,
     ROW_NUMBER() OVER (
       PARTITION BY region
-      ORDER BY amount DESC
+      ORDER BY amount DESC,svc_name
     ) AS max_rank,
     ROW_NUMBER() OVER (
       PARTITION BY region
-      ORDER BY amount
+      ORDER BY amount,svc_name
     ) AS min_rank
   FROM unioned_base
 )
 
-,expensive AS (
-  SELECT
-    region,
-    svc_name AS most_expensive
-  FROM cost_rankings
-  WHERE 1 = 1
-    AND max_rank = 1
-),
-cheapest AS (
-  SELECT
-    region,
-    svc_name AS cheapest
-  FROM cost_rankings
-  WHERE 1 = 1
-    AND min_rank = 1
-)
-
-SELECT
-  cheapest.region,
-  most_expensive,
-  cheapest
-FROM expensive
-JOIN cheapest
-  ON expensive.region = cheapest.region
+SELECT region
+  ,max(case when max_rank = 1 then svc_name end) as most_expensive
+  ,max(case when min_rank = 1 then svc_name end) as cheapest
+FROM cost_rankings
+group by 1
